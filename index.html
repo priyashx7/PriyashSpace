@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>PriyashSpace</title>
+    <link rel="icon" type="image/png" href="images/Product.png"> <!--this is for the favicon image coming on the tab-->
+</head>
+<body>
+            
+    <div style="width: 100%; height: 100%; position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+
+        <!--for overlay of page so that content will load and then page will be visible-->
+        <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 1000;"></div>
+    
+
+        <!-- Creating the nav bar-->
+        <div class="navbar">
+            <img class="logo" src="images/profile_logo.jpeg"/>
+            <div class="nav-text priyash" >Priyash Namdeo</div>
+            <div class="nav-text description">Ex-Product Intern @ Yocket & GroMo | Senior at IIT Delhi | Web 3.0 & AI Enthusiast</div>   
+            
+            <!--this is for the mobile view-->
+            <button class="nav-text hamburger-menu">☰</button>
+            <div class="nav-links">
+                <!-- Navigation Links Here and i have to see its working separately-->
+                <a href=#about>About</a>
+                <a href=#experience>Experience</a>
+                <a href=#project>Project</a>
+                <a href=#skill>Skills</a>
+                <a href="#blog">Blogs</a>
+                <a href=#connect>Let's Connect</a>
+            </div>
+            <!-- this is for the desktop-->
+            <!-- right of nav bar-->
+            <div class="right-nav">
+                <div class="right-nav-text"><a href=#about>About</a></div>
+                <div class="right-nav-text"><a href=#experience>Experience</a></div>
+                <div class="right-nav-text"><a href=#project>Project</a></div>
+                <div class="right-nav-text"><a href=#skill>Skills</a></div>
+                <div class="right-nav-text"><a href="#blog">Blogs</a></div>
+                <div class="right-nav-text"><a href=#connect>Let's Connect</a></div>
+            </div>
+        </div>
+
+        <!-- Creating the hero section-->
+         <div class="hero-section">
+            <img class="background-cover" src="images/cover.png"/>
+
+            <div class="hero-content">
+                <div class="cover-text" >
+                    <div class="text1" >Hello, I am Priyash.</div>
+                    <div class="text2" >An aspiring PM , Entrepreneur & Investor. Turning Ideas into Impactful Outcomes</div>
+                    <div class="text3">Welcome to my space! Take a look around and discover the projects I've worked on.</div>
+                </div>
+                <button class="explore-btn" onclick="location.href='#about';">Explore</button>
+
+                <img class="cover-profile-photo" src="images/profile_logo.jpeg"/>  
+            </div>
+         </div>
+
+
+        <!--creating the about section-->
+        <div id="about" class="about-section">
+            <img class="about-img" src="images/About.png" />
+            
+            <div class="about-text" >
+                <div class="text1" >About me...</div>
+                <div class="text2" >I’m a final-year BTech student at IIT Delhi, driven by a passion for product management, entrepreneurship, and venture capitalism. 
+                    As a Product Management Intern at Yocket (Leap) and GroMo, I honed my core PM skills while delivering impactful results. I have also cracked JEE Adv. & landed at IIT Delhi with a self study of just one year. 
+                    With a user-centric, data-driven approach, I thrive on agile methodologies, emphasizing rapid prototyping and iterative improvements. My interests lie at the intersection of startups, business innovation, and emerging technologies like Web 3.0 and AI.</div>
+            </div>           
+        </div>
+
+        <!--creating the experience section-->
+        <div id="experience" class="experience-section">
+            <div class="exp-heading">Experience</div>
+
+            <div class="exp1-section">
+                <img class="exp1-logo" src="images/yocket.jpeg"/>
+                <div class="exp1-company">Yocket (Leap)</div>
+                <div class="exp1-position">Product Management Intern</div>
+                <div class="exp1-duration">May 2024 - July 2024</div>
+            </div>
+            <div class="exp2-section">
+                <img class="exp2-logo" src="images/gromo.jpeg"/>
+                <div class="exp2-company">GroMo</div>
+                <div class="exp2-position">Product Management Intern</div>
+                <div class="exp2-duration">May 2023 - July 2023</div>
+            </div>        
+        </div>
+
+        <!--creating the project section-->
+        <div id="project" class="project-section">
+            <div class="project-heading">Projects</div>
+            <div class="project-sub-heading">Leadership, Strategic Thinking, Designing and Innovation</div>
+
+            <div class="project-tab">
+                <div class="product-design tab-item active-tab" data-target="product-design-content">Product Design</div>
+                <div class="product-improvement tab-item" data-target="product-improvement-content">Product Improvement</div>
+                <div class="teardown tab-item" data-target="teardown-content">Tear Down</div>
+                <div class="growth tab-item" data-target="growth-content">Growth</div>
+                <div class="technical tab-item" data-target="technical-content">Technical</div>
+            </div>
+        
+            
+            <div id="product-design-content" class="menu-content active">
+                <!--Product Design Content-->
+                <div class="box">
+                    <img src="images/tata1mg.jpeg"/>
+                    <a href="https://drive.google.com/file/d/1jZjN_A49KHqvh-yiCBftGZn2cmh4t_la/view?usp=sharing"><div class="box-text">A platform for personalized, natural health solutions and prevention.</div></a>
+                </div>
+                <div class="box">
+                    <img src="images/hilab.jpeg"/>
+                    <a href="https://drive.google.com/file/d/1MG0xD5_OPwuQsCc8paHSXoWrWBv19jvu/view"><div class="box-text">A network management tool for the US insurer</div></a>
+                </div>
+                <div class="box">
+                    <img src="images/flipkart.jpeg"/>
+                    <a href="https://drive.google.com/file/d/16gja9DpwlTlDbIux0hzuttiZlAka12E3/view"><div class="box-text">Creating a platform to discover, nurture, and promote global superstars from India.</div></a>
+                </div>
+            </div>
+            <div id="product-improvement-content" class="menu-content">
+                <!--Product Improvement Content-->
+                <div class="box">
+                    <img src="images/housing.com.jpeg"/>
+                    <a href="https://drive.google.com/file/d/1KyWEQjGKNEyss9UG0mYjJjZq5agyeW6g/view"><div class="box-text">Improving User Retention on Housing.com</div></a>
+                </div>
+            </div>
+            <div id="teardown-content" class="menu-content">Currently working on this.</div>
+            <div id="growth-content" class="menu-content">Currently working on this.</div>
+            <div id="technical-content" class="menu-content">
+                <div class="box">
+                    <img src="images/Coffe_shop_DA.jpeg"/>
+                    <a href="https://github.com/priyashx7/Coffee-shop-sale-DA-project-"><div class="box-text">Analyzing retail sales data to boost coffee shop performance through insights.</div></a>
+                </div>
+            </div>
+            
+            <button class="portfolio-btn" onclick="window.location.href='https://www.notion.so/12953bc5fb4f80cdb3a0efc4a53ecb0e?v=12953bc5fb4f81bb8cf7000c7abca4c6'">View More</button>
+        </div>
+
+
+
+
+        <!-- creating skill section-->
+        <div id="skill" class="skill-section">
+            <div class="skill-heading">Skills</div>
+            <div class="skill-row">
+                <div class="skillset">User Research</div>
+                <div class="skillset">Product Design</div>
+                <div class="skillset">Product Management</div>
+                <div class="skillset">Market Research</div>
+            </div>
+            <div class="skill-row">
+                <div class="skillset">Wireframing</div>
+                <div class="skillset">Marketing</div>
+                <div class="skillset">Data Analysis</div>
+            </div>
+            <div class="skill-row">
+                <div class="skillset">Customer Analytics</div>
+                <div class="skillset">Product Strategy</div>
+                <div class="skillset">Market Research</div>
+                <div class="skillset">Stakeholder Management</div>
+            </div>
+            <div class="skill-row">
+                <div class="skillset">Frontend</div>
+                <div class="skillset">Bubble Fullstack</div>
+                <div class="skillset">Prompt Engineering</div>
+            </div>
+            <div class="skill-row">
+                <div class="skillset">Excel</div>
+                <div class="skillset">Figma</div>
+                <div class="skillset">SQL</div>
+                <div class="skillset">Python</div>
+            </div>
+        </div>    
+
+
+        <!--creating blog section-->
+        <div id="blog" class="blog-section">
+            <div class="blog-heading">Blogs</div>
+            <div class="blog-menu">
+                <div class="blog">
+                    <img class="blog-img" src="images/Frontend.png"/>
+                    <div class="blog-copy">Frontend, Backend & Database Unveiled</div>
+                </div>
+                <div class="blog">
+                    <img class="blog-img" src="images/API.jpg"/>
+                    <div class="blog-copy">Demystifying APIs: Unlocking the Power of Interconnectedness</div>
+                </div>
+                <div class="blog">
+                    <img class="blog-img" src="images/Gen-AI.jpg"/>
+                    <div class="blog-copy">Unleashing the Power of Generative AI: Transforming Industries and Paving the Way for a Bright Future</div>
+                </div>
+            </div>
+            <button class="blog-btn" onclick="window.location.href='https://medium.com/@priyash.iitd'">View More</button>
+        </div>
+
+
+        <!-- creating the connect section-->
+        <div id="connect" class="connect-section">
+            <div class="connect-left">
+                <div class="connect-heading1">Connect</div>
+                <div class="connect-heading2">Get in Touch</div>
+                <div class="connect-text">I would love to hear from you. Feel free to reach out to me through any of the following channels.</div>
+                <div class="connecting-medium">
+                    <a href="https://www.instagram.com/priyash_rarity/"><img class="connecting-logo" src="images/instagram.jpeg"/></a>
+                    <a href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=priyashiitd-connect"><img class="connecting-logo" src="images/linkedin.jpeg"/></a>
+                </div>
+                <div class="bottom-bar">
+                    <div class="bottom-bar-text"><a href="#about">About</a></div>
+                    <div class="bottom-bar-text"><a href="#project">Project</a></div>
+                    <div class="bottom-bar-text"><a href="#blog">Blogs</a></div>
+                    <div class="bottom-bar-text"><a href="#skill">Skills</a></div>
+                    <div class="bottom-bar-text"><a href="#experience">Experience</a></div>
+                </div>
+
+
+
+            </div>
+            <div class="connect-right">
+                <div class="contact-detail">
+                    <img class="contact-logo" src="images/mail.jpg"/>
+                    <div class="contact-text">
+                        <div class="contact-text1">Email</div>
+                        <div class="contact-text2">priyash.iitd@gmail.com</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-logo" src="images/phone.jpg"/>
+                    <div class="contact-text">
+                        <div class="contact-text1">Phone</div>
+                        <div class="contact-text2">+91-8305791500</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-logo" src="images/address.jpg"/>
+                    <div class="contact-text">
+                        <div class="contact-text1">Address</div>
+                        <div class="contact-text2">IIT Delhi campus, Hauz Khas, South Delhi, Delhi, India (110016)</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+                      
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
