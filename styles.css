@@ -358,7 +358,42 @@ html, body {
     width: 400px; height: auto; margin-top: 10px; position: relative; font-size: 14px; color: white; font-family: serif; word-wrap: break-word;
 }
 
-
+/* to add the animation while scrolling and this is for all ype of device */
+/* Initial state of the section (hidden and below the viewport) */
+.section {
+    opacity: 0;
+    transform: translateY(100px); /* Start below the viewport */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* When the section becomes visible */
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide to normal position */
+  }
+  
+  /* Optional: Add scale effect */
+  .section.visible {
+    transform: translateY(0) scale(1.05); /* Slight zoom-in */
+  }
+  
+  /* Delay for each section */
+  .section:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+  
+  .section:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  
+  .section:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  
+  .section:nth-child(4) {
+    transition-delay: 0.8s;
+  }
+ 
 
 /* for mobile screens */
 
