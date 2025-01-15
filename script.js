@@ -122,6 +122,41 @@ document.addEventListener("DOMContentLoaded", function() {
             targetContent.classList.add("active");
         });
     });
+
+    // for adding the aniamtion in the section while they come into view
+    const sections = document.querySelectorAll('.section');
+
+    function checkVisibility() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+
+            // Check if the section is in the viewport
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                // Add the 'visible' class only when the section is in the viewport
+                if (!section.classList.contains('visible')) {
+                    section.classList.add('visible');
+                }
+            } else {
+                // Optionally remove the 'visible' class when the section is out of the viewport
+                if (section.classList.contains('visible')) {
+                    section.classList.remove('visible');
+                }
+            }
+        });
+    }
+
+    // Trigger visibility check when scrolling
+    window.addEventListener('scroll', checkVisibility);
+
+    // Avoid triggering animation when page initially loads
+    // Only check visibility if the user has scrolled
+    window.addEventListener('load', function() {
+        setTimeout(checkVisibility, 100);  // Delayed execution to allow initial load of page
+    });
+
+    // Initial trigger of visibility check to account for sections already visible (if scrolled to)
+    checkVisibility();
+
     // Once all positioning is done, hide the loading overlay
     window.onload = function() {
         // Call adjustSectionPositions
