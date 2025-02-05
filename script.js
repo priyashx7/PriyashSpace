@@ -17,7 +17,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
-    
+    /* For deiciding what to show image or video on cover based on internet speed of the user */
+    const video = document.getElementById("background-video");
+    const image = document.getElementById("background-image");
+
+    if ('connection' in navigator) {
+        let speed = navigator.connection.downlink; // Get network speed in Mbps
+        console.log("Network Speed:", speed + " Mbps");
+
+        if (speed < 2) {  // If speed is less than 2Mbps, show image
+            video.style.display = "none";
+            image.style.display = "block";
+        } else { // If speed is good, show video
+            image.style.display = "none";
+            video.style.display = "block";
+        }
+    } else {
+        console.log("Network API not supported, defaulting to video.");
+    }
+
+
     /* for adding the hamburger fuctionality of toggling down while clicking onto it */
     document.querySelector('.hamburger-menu').addEventListener('click', function() {
         document.querySelector('.nav-links').classList.toggle('active');
