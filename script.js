@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let speed = navigator.connection.downlink; // Get network speed in Mbps
         console.log("Network Speed:", speed + " Mbps");
 
-        if (speed < 2) {  // If speed is less than 2Mbps, show image
+        if (speed < 1) {  // If speed is less than 2Mbps, show image
             video.style.display = "none";
             image.style.display = "block";
         } else { // If speed is good, show video
