@@ -12,10 +12,9 @@
             
     <div style="width: 100%; height: 100%; position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
-
         <!--for overlay of page so that content will load and then page will be visible-->
         <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 1000;"></div>
-    
+   
 
         <!-- Creating the nav bar-->
         <div class="navbar">
@@ -48,7 +47,13 @@
 
         <!-- Creating the hero section-->
          <div class="hero-section">
-            <img class="background-cover" src="images/cover.png"/>
+            <!--to ensure if internet speed is good then show video else image as cover-->
+            <img id="background-image" class="background-cover" src="images/cover.png" style="display: none;">
+
+
+            <video id="background-video" class="background-cover" autoplay loop muted playsinline>
+                <source src="images/video_cover.mp4" type="video/mp4">
+            </video>
 
             <div class="hero-content">
                 <div class="cover-text" >
@@ -144,8 +149,6 @@
             
             <button class="portfolio-btn" onclick="window.location.href='https://www.notion.so/12953bc5fb4f80cdb3a0efc4a53ecb0e?v=12953bc5fb4f81bb8cf7000c7abca4c6'">View More</button>
         </div>
-
-
 
 
         <!-- creating skill section-->
@@ -246,31 +249,8 @@
                         <div class="contact-text2">IIT Delhi campus, Hauz Khas, South Delhi, Delhi, India (110016)</div>
                     </div>
                 </div>
-
-
-
             </div>
-
-
-
-
-
-        </div>
-                      
-    
-    
-    
-    
+        </div>    
     </div>
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
