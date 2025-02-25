@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let speed = navigator.connection.downlink; // Get network speed in Mbps
         console.log("Network Speed:", speed + " Mbps");
 
-        if (speed < 0.5) {  // If speed is less than 0.5Mbps, show image
+        if (speed < 1) {  // If speed is less than 1Mbps, show image
             video.style.display = "none";
             image.style.display = "block";
         } else { // If speed is good, show video
@@ -89,28 +89,28 @@ document.addEventListener("DOMContentLoaded", function() {
             // Top values for mobile layout
             document.querySelector('.about-section').style.top = (x + 20) + 'px';  // Example value for mobile
             document.querySelector('.experience-section').style.top = (x + 800) + 'px';
-            document.querySelector('.project-section').style.top = (x + 1800) + 'px';
-            document.querySelector('.skill-section').style.top = (x + 2950) + 'px';
-            document.querySelector('.blog-section').style.top = (x + 3500) + 'px';
-            document.querySelector('.connect-section').style.top = (x + 4800) + 'px';
+            document.querySelector('.project-section').style.top = (x + 2200) + 'px';
+            document.querySelector('.skill-section').style.top = (x + 3350) + 'px';
+            document.querySelector('.blog-section').style.top = (x + 3900) + 'px';
+            document.querySelector('.connect-section').style.top = (x + 5200) + 'px';
             // ... Repeat for other sections and adjust as needed for mobile ...
         } else if (isTablet) {
             // Top values for tablet layout
             document.querySelector('.about-section').style.top = (x + 80) + 'px';  // Example values for tablet
             document.querySelector('.experience-section').style.top = (x + 950) + 'px';
-            document.querySelector('.project-section').style.top = (x + 1550) + 'px';
-            document.querySelector('.skill-section').style.top = (x + 2450) + 'px';
-            document.querySelector('.blog-section').style.top = (x + 3000) + 'px';
-            document.querySelector('.connect-section').style.top = (x + 3750) + 'px';
+            document.querySelector('.project-section').style.top = (x + 1750) + 'px';
+            document.querySelector('.skill-section').style.top = (x + 2650) + 'px';
+            document.querySelector('.blog-section').style.top = (x + 3200) + 'px';
+            document.querySelector('.connect-section').style.top = (x + 3950) + 'px';
             // ... Adjust and repeat for other sections as needed for tablet ...
         }else {
             // Top values for desktop layout
             document.querySelector('.about-section').style.top = (x + 200) + 'px';
             document.querySelector('.experience-section').style.top = (x + 600) + 'px';
-            document.querySelector('.project-section').style.top = (x + 1200) + 'px';
-            document.querySelector('.skill-section').style.top = (x + 2200) + 'px';
-            document.querySelector('.blog-section').style.top = (x + 2800) + 'px';
-            document.querySelector('.connect-section').style.top = (x + 3616) + 'px';
+            document.querySelector('.project-section').style.top = (x + 1400) + 'px';
+            document.querySelector('.skill-section').style.top = (x + 2400) + 'px';
+            document.querySelector('.blog-section').style.top = (x + 3000) + 'px';
+            document.querySelector('.connect-section').style.top = (x + 3816) + 'px';
             // ... Repeat for other sections and adjust as needed for desktop ...
         }
         // Repeat this for other sections
